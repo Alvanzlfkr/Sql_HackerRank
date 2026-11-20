@@ -1,0 +1,13 @@
+Pertanyaan 1:
+Ketika membangun solusi untuk setiap studi kasus, bagaimana Anda menentukan struktur query yang paling efektif (misalnya memutuskan kapan menggunakan CTE, kapan cukup dengan subquery, atau kapan window function lebih tepat dibanding agregasi biasa)? Jelaskan bagaimana pertimbangan tersebut membantu Anda menghasilkan query yang lebih terstruktur, mudah diuji, dan efisien.
+
+ketika kita ingin membangun solusi pada setiap studi kasus kita harus mengidentifikasi tahapan pengelolaan data yang dibutuhkan terlebih dahulu.
+penggunaan CTE dapat dilakukan untuk membantu memisahkan setiap proses menjadi bagian lebih kecil sehingga query lebih mudah di baca, dipahami, di uji dan terlihat clean.
+penggunaan subquery untuk filtering yang lebih sederhana dan window function perhitungan tanpa group by.
+
+Pertanyaan 2:
+Setelah mengerjakan seluruh soal, teknik SQL lanjutan apa yang menurut Anda paling memberi dampak pada cara Anda menganalisis dan memproses data (misalnya range join, window function, nested aggregation, atau CASE WHEN)? Jelaskan bagaimana teknik tersebut dapat membantu Anda menyelesaikan masalah data yang lebih kompleks di pekerjaan nyata.
+
+menurut saya teknik yang paling memberikan dampak pada menganalisis dan memproses data adalah CTE, CASE WHEN dan aggregation. CTE dapat mempermudah kita dalam memahami query dalam menganalisis data karena pada CTE query di bagi dalam beberapa tahapan, aggregation membantu kita untuk melakukan perhitungan, dan Case when digunakan untuk membuat klasifikasi berdasarkan kondisi.
+
+pada teknik di atas contoh penggunaannya yaitu menganalisis transaksi customer, mengelompokkan dan membuat laporan pada suatu bisnis yang digunakan sebagai informasi pengambilan keputusan
